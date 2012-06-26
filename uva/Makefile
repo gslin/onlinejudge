@@ -1,5 +1,5 @@
 #
-CFLAGS=		-ansi -O2 -pipe
+CFLAGS=		-ansi -O2 -pipe -Wall
 LIBS=		-lcrypt -lm
 
 #
