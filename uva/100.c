@@ -27,16 +27,16 @@ int main(int argc, const char *argv[])
             end = x;
         }
 
-        unsigned int i, max;
+        unsigned int i, now = 0;
         for (i = start; i <= end; i++) {
 
             unsigned int n = count_length(i);
-            if (n > max) {
-                max = n;
+            if (n > now) {
+                now = n;
             }
         }
 
-        printf("%d %d %d\n", start, end, max);
+        printf("%u %u %u\n", start, end, now);
     }
 
     return 0;
