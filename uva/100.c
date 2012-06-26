@@ -3,7 +3,6 @@
 unsigned int count_length(unsigned int x)
 {
     unsigned int count;
-
     for (count = 1; 1 != x; count++) {
         if (0 == x % 2) {
             x /= 2;
