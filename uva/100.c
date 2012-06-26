@@ -17,7 +17,7 @@ unsigned int count_length(unsigned int x)
 int main(int argc, const char *argv[])
 {
     unsigned int x, y;
-    while (0 < scanf("%d %d", &x, &y)) {
+    while (0 < scanf("%u %u", &x, &y)) {
         unsigned int end, start;
         if (x < y) {
             start = x;
