@@ -36,7 +36,7 @@ int main(int argc, const char *argv[])
             }
         }
 
-        printf("%u %u %u\n", start, end, now);
+        printf("%u %u %u\n", x, y, now);
     }
 
     return 0;
