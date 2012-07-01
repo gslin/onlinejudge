@@ -3,7 +3,7 @@ CFLAGS=		-ansi -O2 -pipe -Wall
 LIBS=		-lcrypt -lm
 
 #
-BINS=		100
+BINS=		100 102
 
 #
 .c.o: $*.c
