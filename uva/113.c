@@ -26,7 +26,6 @@ int main(int argc, const char *argv[])
             break;
         }
         scanf("%s", p);
-
         reverse(p);
     }
 
