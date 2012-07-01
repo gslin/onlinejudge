@@ -18,5 +18,17 @@ void reverse(char *str)
 
 int main(int argc, const char *argv[])
 {
+    unsigned int n;
+    char p[128];
+
+    for (;;) {
+        if (0 >= scanf("%u", &n)) {
+            break;
+        }
+        scanf("%s", p);
+
+        reverse(p);
+    }
+
     return 0;
 }
