@@ -23,6 +23,16 @@ int main(int argc, const char *argv[])
         unmoved[3] = num[CLEAR] + num[3 + GREEN] + num[6 + BROWN];
         unmoved[4] = num[GREEN] + num[3 + BROWN] + num[6 + CLEAR];
         unmoved[5] = num[GREEN] + num[3 + CLEAR] + num[6 + BROWN];
+
+        unsigned int idx = 0, max = 0;
+        for (i = 0; i < sizeof(unmoved) / sizeof(unmoved[0]); i++) {
+            if (max < unmoved[i]) {
+                max = unmoved[i];
+                idx = i;
+            }
+        }
+
+        printf("%s %u\n", result[idx], sum - max);
     }
 
     return 0;
