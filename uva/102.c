@@ -6,7 +6,7 @@
 
 int main(int argc, const char *argv[])
 {
-    unsigned int num[9];
+    unsigned int num[9], unmoved[6];
     const char *result[] = {"BCG", "BGC", "CBG", "CGB", "GBC", "GCB"};
 
     while (0 < scanf("%u %u %u %u %u %u %u %u %u", &num[0], &num[2], &num[1], &num[3], &num[5], &num[4], &num[6], &num[8], &num[7])) {
@@ -16,6 +16,13 @@ int main(int argc, const char *argv[])
         for (i = 0; i < sizeof(num) / sizeof(num[0]); i++) {
             sum += num[i];
         }
+
+        unmoved[0] = num[BROWN] + num[3 + CLEAR] + num[6 + GREEN];
+        unmoved[1] = num[BROWN] + num[3 + GREEN] + num[6 + CLEAR];
+        unmoved[2] = num[CLEAR] + num[3 + BROWN] + num[6 + GREEN];
+        unmoved[3] = num[CLEAR] + num[3 + GREEN] + num[6 + BROWN];
+        unmoved[4] = num[GREEN] + num[3 + BROWN] + num[6 + CLEAR];
+        unmoved[5] = num[GREEN] + num[3 + CLEAR] + num[6 + BROWN];
     }
 
     return 0;
