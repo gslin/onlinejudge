@@ -6,6 +6,7 @@ void reverse(char *str)
     char *start = str, *end = str + strlen(str) - 1;
 
     while (start < end) {
+        /* This is actually swap hack */
         *start ^= *end;
         *end ^= *start;
         *start ^= *end;
